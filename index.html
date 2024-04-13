@@ -1,1 +1,742 @@
-hello world!
+<meta name="description" content="OOD survey page">
+<link rel="stylesheet" href="jemdoc.css" type="text/css">
+<title>Tabular-Survey</title>
+
+<body>
+<div id="layout-content" style="margin-top:25px">
+
+<table>
+    <tbody>
+        <tr>
+            <td width="1000">
+                <div id="toptitle">
+                    <h1>Deep Tabular Representation Learning and its Applications: A Survey</h1>
+                </div>
+               
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Builder & Current Maintainer: <a href="https://weijieyingren.github.io/">Weijieying Ren</a>, YuQing Huang and <a href="https://tianxiangzhao.github.io/">Tianxiang Zhao</a>.</h4>
+
+<h2>Paper List</h2>
+<p>
+    We have summarized the main branches of works for Deep tabular data representation learning, including its downstream tasks and applications. For more details, please refer to our recent <b>survey <a href="https://arxiv.org/abs/2108.13624">(paper)</a></b>.
+</p>
+
+
+
+<h2>Branch 1: Deep Tabular Representation Learning<small></small></h2>
+<h3>1.1 Heterogeneous Feature Representation Learning </h3> 
+<h4>1.1.1 Kernel-Based </h4>
+<ul>
+    <li>
+        Feature Learning for Interpretable, Performant Decision Trees. <br>
+         Jack H. Good, Torin Kovach, Kyle Miller, Artur Dubrawski (Neruips 2023) <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/d1b4076ae067dd23bad5ac2693547a01-Paper-Conference.pdf">(paper)</a>
+    </li>
+    <li>
+        Kernel Density Decision Trees. <br>
+        Jack H. Good, Kyle Miller, Artur Dubrawski
+       (AAAI 2022) <a href="https://insights.sei.cmu.edu/documents/1522/2022_021_001_884031.pdf">(paper)</a>
+    </li>
+
+    <li>Heterogeneous Risk Minimization. <br>
+        Jiashuo Liu, Zheyuan Hu, Peng Cui, Bo Li, Zheyan Shen(ICML2021) <a href="https://arxiv.org/abs/2105.03818">(paper)</a>
+    </li>
+
+    <li>
+        Kernelized Heterogeneous Risk Minimization. <br>
+        Jiashuo Liu, Zheyuan Hu, Peng Cui, Bo Li, Zheyan Shen (NeurIPS2021) <a href="https://arxiv.org/pdf/2110.12425.pdf">(paper)</a>
+    </li>
+</ul>
+	
+<h4>1.1.2 Binning-Based Representation Learning </h4>
+<ul>
+    <li>Byzantine-Robust Learning on Heterogeneous Datasets via Bucketing. <br>
+       Sai Praneeth Karimireddy, Lie He, Martin Jaggi (ICLR 2022) <a href="https://openreview.net/forum?id=jXKKDEi5vJt">(paper)</a>
+    </li>
+
+    <li>
+        On Embeddings for Numerical Features in Tabular Deep Learning. <br>
+       Yury Gorishniy, Ivan Rubachev, Artem Babenko
+	(Neurips 2022) <a href="https://openreview.net/forum?id=pfI7u0eJAIr">(paper)</a>
+    </li>
+</ul>	
+
+<h4>1.1.3 Latent Representation Learning </h4>
+<ul>
+<li>
+Transferable Adversarial Robustness for Categorical Data via Universal Robust Embeddings. <br>
+Klim Kireev, Maksym Andriushchenko, Carmela Troncoso, Nicolas Flammarion 
+(Neurips 2023)<a href="https://openreview.net/forum?id=Kig2YJVYfq"> (paper)</a> 
+</li>
+	
+    <li>Revisiting Deep Learning Models for Tabular Data. <br>
+      Yury Gorishniy, Ivan Rubachev, Valentin Khrulkov, Artem Babenko 
+	 (Neurips 2021)  <a href="https://openreview.net/forum?id=i_Q1yrOegLY">(paper)</a>
+    </li>	
+</ul>
+	
+	
+<h3>1.2 Inter-Column Dependency Modeling </h3>
+
+<h4>1.2.1 Tree-based </h5>
+<ul>
+    <li>
+        GRANDE: Gradient-Based Decision Tree Ensembles for Tabular Data. <br>
+        Sascha Marton, Stefan Lüdtke, Christian Bartelt, Heiner Stuckenschmidt 
+	(ICLR 2024) <a href="https://openreview.net/forum?id=XEFWBxi075">(paper)</a>
+    </li>
+	
+    <li>
+     Instance-Based Uncertainty Estimation for Gradient-Boosted Regression Trees. <br>
+     Jonathan Brophy, Daniel Lowd
+ (Neurips 2022) <a href="https://openreview.net/forum?id=v6CqBssIwYw">(paper)</a>
+    </li>
+	
+    <li>
+        POETREE: Interpretable Policy Learning with Adaptive Decision Trees. <br>
+       Alizée Pace, Alex Chan, Mihaela van der Schaar 
+	(ICLR 2022) <a href="https://openreview.net/forum?id=AJsI-ymaKn_">(paper)</a>
+    </li>
+
+
+	
+    <li>
+     Instance-Based Uncertainty Estimation for Gradient-Boosted Regression Trees. <br>
+     Jonathan Brophy, Daniel Lowd
+ (Neurips 2022) <a href="https://openreview.net/forum?id=v6CqBssIwYw">(paper)</a>
+    </li>
+
+    <li>Local Contrastive Feature Learning for Tabular Data. <br>
+Zhabiz Gharibshah, Xingquan Zhu.
+(CIKM 2022) <a href="https://dl.acm.org/doi/pdf/10.1145/3511808.3557630">(paper)</a>
+    </li>
+
+    <li>
+      Subgroup Robustness Grows On Trees: An Empirical Baseline Investigation. <br>
+     Joshua P Gardner, Zoran Popovi, Ludwig Schmidt
+ (Neurips 2022) <a href="https://openreview.net/forum?id=6QvmtRjWNRy">(paper)</a>
+    </li>
+	
+</ul>
+
+<h4>1.2.2 Graph-based </h4>	
+<ul>
+<li>
+On Class Distributions Induced by Nearest Neighbor Graphs for Node Classification of Tabular Data. <br>
+Federico Errica (Neurips 2023) <a href="https://openreview.net/forum?id=vEzcRdiTkP">(paper)</a>   
+</li>
+
+<li>GOGGLE: Generative Modelling for Tabular Data by Learning Relational Structure. <br>
+Tennison Liu, Zhaozhi Qian, Jeroen Berrevoets, Mihaela van der Schaar  (ICLR 2023) <a href="https://openreview.net/forum?id=fPVRcJqspu">(paper)</a>   
+    </li>
+	
+ <li>
+HyTrel: Hypergraph-enhanced Tabular Data Representation Learning. <br>
+Pei Chen, Soumajyoti Sarkar, Leonard Lausen, Balasubramaniam Srinivasan, Sheng Zha, Ruihong Huang, George Karypis
+(Neurips 2023 spotlight) <a href="https://openreview.net/forum?id=7vqlzODS28">(paper)</a>
+</li>
+	
+<li>T2G-FORMER: Organizing Tabular Features into Relation Graphs Promotes Heterogeneous Feature Interaction. <br>
+Jiahuan Yan, Jintai Chen, Yixuan Wu, Danny Z. Chen, Jian Wu:
+(AAAI 2023)	<a href="https://ojs.aaai.org/index.php/AAAI/article/view/26272">(paper)</a>
+</li>
+	
+<li> Does your graph need a confidence boost? Convergent boosted smoothing on graphs with tabular node features. <br>
+Jiuhai Chen, Jonas Mueller, Vassilis N. Ioannidis, Soji Adeshina, Yangkun Wang, Tom Goldstein, David Wipf 
+(ICLR 2022) <a href="https://arxiv.org/abs/2010.16412">(paper)</a>
+</li>
+
+    <li> Table2Graph: Transforming Tabular Data to Unified Weighted Graph. <br>
+Kaixiong Zhou, Zirui Liu, Rui Chen, Li Li, Soo-Hyun Choi, Xia Hu
+(IJCAI 2022)	<a href="https://www.ijcai.org/proceedings/2022/336">(paper)</a>
+    </li>
+</ul>
+
+<h4>1.2.3 Rule-based Method</h4>	
+<ul>
+<li>
+Logical Activation Functions: Logit-space equivalents of Probabilistic Boolean Operators. <br>
+Scott C Lowe, Robert Earle, Jason d'Eon, Thomas Trappenberg, Sageev Oore. (Neurips 2022)
+<a href="https://openreview.net/forum?id=m6HNNpQO8dc"> (paper)</a>  
+</li>
+</ul>	
+
+<h4>1.2.4 Transformer-based </h4>
+<ul>
+<li>Arithmetic Feature Interaction Is Necessary for Deep Tabular Learning. <br>
+Yi Cheng; Renjun Hu; Haochao Ying; Xing Shi; Jian Wu; Wei Lin  
+(AAAI 2024)<a href="https://arxiv.org/abs/2402.02334">(paper)</a>  
+</li>
+
+<li>Divide Rows and Conquer Cells: Towards Structure Recognition for Large Tables. <br>
+Huawen Shen, Xiang Gao, Jin Wei, Liang Qiao, Yu Zhou, Qiang Li, Zhanzhan Cheng
+(IJCAI 2023)	<a href="https://www.ijcai.org/proceedings/2023/152">(paper)</a>
+</li>
+
+<li>DIWIFT: Discovering Instance-wise Influential Features for Tabular Data. <br>
+Dugang Liu, Pengxiang Cheng, Hong Zhu, Xing Tang, Yanyu Chen, Xiaoting Wang, Weike Pan, Zhong Ming, Xiuqiang He
+(TheWebConf 2023)	<a href="https://arxiv.org/abs/2207.02773">(paper)</a>
+</li>
+	
+    <li>
+        TransTab: Learning Transferable Tabular Transformers Across Tables. <br>
+       Zifeng Wang, Jimeng Sun.
+	(Neurips 2022) <a href="https://openreview.net/forum?id=A1yGs_SWiIi">(paper)</a>  
+    </li>
+</ul>
+
+
+<h4>1.2.5 Additive-model-based  </h4>
+<ul>
+<li>
+Sparse Interaction Additive Networks via Feature Interaction Detection and Sparse Selection. <br>
+James Enouen, Yan Liu.
+(Neurips 2022)	<a href="https://openreview.net/forum?id=Q6DJ12oQjrp">(paper)</a>  
+</li>
+</ul>
+
+<h4>1.2.6 Masking Modeling </h4>
+<ul>
+<li>
+MCM: Masked Cell Modeling for Anomaly Detection in Tabular Data. <br>
+Jiaxin Yin, Yuanyuan Qiao, Zitang Zhou, Xiangchao Wang, Jie Yang (ICLR 2024).<a href="https://openreview.net/forum?id=lNZJyEDxy4">(paper)</a>
+</li>
+	
+<li>
+Data-Efficient and Interpretable Tabular Anomaly Detection. <br>
+Chun-Hao Chang, Jinsung Yoon, Sercan Arik, Madeleine Udell, Tomas Pfister 
+	(KDD 2023) <a href="https://arxiv.org/abs/2203.02034">(paper)</a>
+</li>	
+
+<li>
+Anomaly detection for tabular data with internal contrastive learning. <br>
+Tom Shenkar, Lior Wolf  (ICLR 2022) <a href="https://openreview.net/forum?id=_hszZbt46bT">(paper)</a>
+	
+</li>		
+	
+</ul>
+
+<h4>1.2.7 Neural Architecture Search</h4>
+<ul>
+<li>
+TabNAS: Rejection Sampling for Neural Architecture Search on Tabular Datasets. <br>
+Chengrun Yang, Gabriel Bender, Hanxiao Liu, Pieter-Jan Kindermans, Madeleine Udell, Yifeng Lu, Quoc V Le, Da Huang 
+(Neurips 2022) <a href="https://openreview.net/forum?id=hHrO6-IfskR">(paper)</a>
+</li>
+</ul>	
+	
+<h3>1.3 Self-supervised Representation Learning </h3>
+<ul>
+
+<li>SwitchTab: Switched Autoencoders Are Effective Tabular Learners. <br>
+Jing Wu; Suiyao Chen; Qi Zhao; Renat Sergazinov; Chen Li; Shengjie Liu. 
+(AAAI 2024) <a href="https://assets.amazon.science/e7/d8/782504794bf6b7b05ac315965b78/switchtab-switched-autoencoders-are-effective-tabular-learners.pdf">(paper)</a>
+</li>
+
+<li>STUNT: Few-shot Tabular Learning with Self-generated Tasks from Unlabeled Tables. <br>
+Jaehyun Nam, Jihoon Tack, Kyungmin Lee, Hankook Lee, Jinwoo Shin
+(ICLR 2023)	<a href="https://arxiv.org/pdf/2303.00918.pdf">(paper)</a>
+</li>
+	
+<li>Self-Supervision Enhanced Feature Selection with Correlated Gates. <br>
+Changhee Lee, Fergus Imrie, Mihaela van der Schaar
+(ICLR 2022)	<a href="https://openreview.net/forum?id=oDFvtxzPOx">(paper)</a>
+</li>
+
+<li>Scarf: Self-Supervised Contrastive Learning using Random Feature Corruption. <br>
+Dara Bahri, Heinrich Jiang, Yi Tay, Donald Metzler
+ (ICLR 2022) <a href="https://openreview.net/forum?id=CuV_qYkmKb3">(paper)</a>
+</li>
+	
+<li>Local Contrastive Feature Learning for Tabular Data. <br>
+Zhabiz Gharibshah, Xingquan Zhu.
+(CIKM 2022) <a href="https://dl.acm.org/doi/pdf/10.1145/3511808.3557630">(paper)</a>
+</li>	
+
+<li>CORE: Self- and Semi-supervised Tabular Learning with COnditional REgularizations. <br>
+Xintian Han, Rajesh Ranganath
+(Neurips 2021) <a href="https://sslneurips21.github.io/files/CameraReady/CORE_workshop.pdf">(paper)</a>
+</li>
+
+<li>SubTab: Subsetting Features of Tabular Data for Self-Supervised Representation Learning. <br>
+Talip Ucar, Ehsan Hajiramezanali, Lindsay Edwards
+(Neurips 2021)  <a href="https://openreview.net/forum?id=vrhNQ7aYSdr">(paper)</a>
+</li>
+
+<li>VIME: Extending the Success of Self- and Semi-supervised Learning to Tabular Domain. <br>
+Jinsung Yoon, Yao Zhang, James Jordon, Mihaela van der Schaar
+(Neurips 2020)	<a href="https://proceedings.neurips.cc/paper/2020/hash/7d97667a3e056acab9aaf653807b4a03-Abstract.html">(paper)</a>
+</li>
+	
+</ul>
+
+<h3>1.4 Clustering-based Representation Learning </h3>	
+<ul>
+
+<li>
+PTaRL: Prototype-based Tabular Representation Learning via Space Calibration. <br>
+Hangting Ye, Wei Fan, Xiaozhuang Song, Shun Zheng, He Zhao, Dan dan Guo, Yi Chang (ICLR 2024) <a href="https://openreview.net/forum?id=G32oY4Vnm8">(paper)</a>
+</li>
+
+<li>
+TabR: Tabular Deep Learning Meets Nearest Neighbors.<br>
+Yury Gorishniy, Ivan Rubachev, Nikolay Kartashev, Daniil Shlenskii, Akim Kotelnikov, Artem Babenko (ICLR 2024).<a href="https://openreview.net/forum?id=rhgIgTSSxW">(paper)</a>
+</li>
+	
+
+<li>
+On Class Distributions Induced by Nearest Neighbor Graphs for Node Classification of Tabular Data. <br>
+Federico Errica (Neurips 2023) <a href="https://openreview.net/forum?id=vEzcRdiTkP">(paper)</a>   
+</li>	
+
+<li>
+Data-IQ: Characterizing subgroups with heterogeneous outcomes in tabular data. <br>
+ Nabeel Seedat, Jonathan Crabbé, Ioana Bica, Mihaela van der Schaar
+(Neurips 2022)	<a href="https://openreview.net/forum?id=qC2BwvfaNdd">(paper)</a>
+</li>	
+
+<li>
+Learning Enhanced Representation for Tabular Data via Neighborhood Propagation. <br>
+Kounianhua Du, Weinan Zhang, Ruiwen Zhou, Yangkun Wang, Xilong Zhao, Jiarui Jin, Quan Gan, Zheng Zhang, David Wipf
+(Neurips 2022) <a href="https://openreview.net/forum?id=JJCnsgk4OIS">(paper)</a>
+</li>
+</ul>	
+
+<h3>1.3 Learning with External Knowledge </h3>
+<h4>1.3.1 Learning with Good Model Initialization </h4>	
+<ul>
+<li>XTab: Cross-table Pretraining for Tabular Transformers. <br>
+Bingzhao Zhu, Xingjian Shi, Nick Erickson, Mu Li, George Karypis, Mahsa Shoaran
+(ICML 2023) <a href="https://openreview.net/forum?id=uGORNDmIdr">(paper)</a>
+</li>
+
+<li>Numerical Tuple Extraction from Tables with Pre-training. <br>
+Qingping Yang, Yixuan Cao, Yingming Hu, Jianfeng Li, Nanbo Peng, Ping Luo.
+(KDD 2022)	<a href="https://dl.acm.org/doi/10.1145/3534678.3539460">(paper)</a>
+</li>
+
+<li>Well-tuned Simple Nets Excel on Tabular Datasets. <br>
+Arlind Kadra, Marius Lindauer, Frank Hutter, Josif Grabocka
+(Neurips 2021)  <a href="https://openreview.net/forum?id=d3k38LTDCyO">(paper)</a>
+</li>
+</ul>
+
+<h4>1.3.1 Learning with Knowledge Graph </h4>	
+<ul>
+<li>
+High dimensional, tabular deep learning with an auxiliary knowledge graph. <br>
+Camilo Ruiz, Hongyu Ren, Kexin Huang, Jure Leskovec 
+(Neurips 2023)<a href="https://openreview.net/forum?id=GGylthmehy">(paper)</a>  
+</li>
+
+<li>External Knowledge Infusion for Tabular Pre-training Models with Dual-adapters. <br>
+Can Qin, Sungchul Kim, Handong Zhao, Tong Yu, Ryan A. Rossi, YUN FU.
+(KDD 2022) <a href="https://dl.acm.org/doi/abs/10.1145/3534678.3539403">(paper)</a>
+ </li>
+</ul>
+<h4>1.3.2 Learning with Large Language Models </h4>	
+<ul>
+
+<li> OpenTab: Advancing Large Language Models as Open-domain Table Reasoners. <br>
+ Kezhi Kong, Jiani Zhang, Zhengyuan Shen, Balasubramaniam Srinivasan, Chuan Lei, Christos Faloutsos, Huzefa Rangwala, George Karypis 
+(ICLR 2024)
+<a href="https://openreview.net/forum?id=Qa0ULgosc9">(paper)</a>
+</li>
+
+<li>Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources. <br>
+ Xingxuan Li, Ruochen Zhao, Yew Ken Chia, Bosheng Ding, Shafiq Joty, Soujanya Poria, Lidong Bing  
+(ICLR 2024)
+<a href="https://openreview.net/forum?id=cPgh4gWZlz">(paper)</a>
+</li>
+	
+<li>Making Pre-trained Language Models Great on Tabular Prediction. <br>
+Jiahuan Yan, Bo Zheng, Hongxia Xu, Yiheng Zhu, Danny Chen, Jimeng Sun, Jian Wu, Jintai Chen
+(ICLR 2024)	<a href="https://openreview.net/forum?id=anzIzGZuLi">(paper)</a>
+</li>
+	
+<li>
+UniTabE: A Universal Pretraining Protocol for Tabular Foundation Model in Data Science. <br>
+Yazheng Yang, Yuqi Wang, Guang Liu, Ledell Wu, Qi Liu 
+(ICLR 2024) <a href="https://openreview.net/forum?id=6LLho5X6xV">(paper)</a>
+</li>
+
+<li>Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding. <br>
+Zilong Wang, Hao Zhang, Chun-Liang Li, Julian Martin Eisenschlos, Vincent Perot, Zifeng Wang, Lesly Miculicich, Yasuhisa Fujii, Jingbo Shang, Chen-Yu Lee, Tomas Pfister 
+(ICLR 2024) <a href="https://openreview.net/forum?id=4L0xnS4GQM">(paper)</a>
+</li>
+
+<li>
+Parameterizing Context: Unleashing the Power of Parameter-Efficient Fine-Tuning and In-Context Tuning for Continual Table Semantic Parsing. <br>
+Yongrui Chen, Shenyu Zhang, Guilin Qi, Xinnan Guo 
+(Neurips 2023) <a href="https://openreview.net/forum?id=B01uiWhjpc">(paper)</a>
+</li>
+
+<li>Trompt: Towards a Better Deep Neural Network for Tabular Data. <br>
+Kuan-Yu Chen, Ping-Han Chiang, Hsin-Rung Chou, Ting-Wei Chen, Tien-Hao Chang
+(ICML 2023)	<a href="https://openreview.net/forum?id=0yNmeyteuS">(paper)</a>
+</li>
+
+<li>
+Large Language Models for Automated Data Science: Introducing CAAFE for Context-Aware Automated Feature Engineering. <br>
+Noah Hollmann, Samuel Müller, Frank Hutter 
+((Neurips 2023) <a href="https://openreview.net/forum?id=9WSxQZ9mG7">(paper)</a>
+</li>
+	
+<li>
+Language Models are Weak Learners. <br>
+Hariharan Manikandan, Yiding Jiang, J Zico Kolter 
+(Neurips 2023) <a href="https://openreview.net/forum?id=559NJBfN20">(paper)</a> .
+</li>
+
+<li>DyRRen: A Dynamic Retriever-Reranker-Generator Model for Numerical Reasoning over Tabular and Textual Data.  <br>
+Xiao Li, Yin Zhu, Sichen Liu, Jiangzhou Ju, Yuzhong Qu, Gong Cheng
+(AAAI 2023)	<a href="https://arxiv.org/abs/2211.12668">(paper)</a>
+</li>
+
+<li>Retrieve, Reason, and Refine: Generating Accurate and Faithful Patient Instructions. <br>
+Fenglin Liu, Bang Yang, Chenyu You, Xian Wu, Shen Ge, Zhangdaihong Liu, Xu Sun, Yang Yang, David A. Clifton
+(Neurips 2022) <a href="https://openreview.net/forum?id=dp0zWsdOV1h">(paper)</a>
+</li>
+	
+<li>Retrieve, Reason, and Refine: Generating Accurate and Faithful Patient Instructions. <br>
+Fenglin Liu, Bang Yang, Chenyu You, Xian Wu, Shen Ge, Zhangdaihong Liu, Xu Sun, Yang Yang, David A. Clifton
+(Neurips 2022) <a href="https://openreview.net/forum?id=dp0zWsdOV1h">(paper)</a>
+</li>
+
+<li>
+TAPEX: Table Pre-training via Learning a Neural SQL Executor. <br>
+Qian Liu, Bei Chen, Jiaqi Guo, Morteza Ziyadi, Zeqi Lin, Weizhu Chen, Jian-Guang Lou
+(ICLR 2022) <a href="https://openreview.net/forum?id=O50443AsCP">(paper)</a>
+</li>
+
+</ul>	
+
+
+<h3>1.4 Causal Representation Learning</h3>
+<ul>
+
+<li>TabPFN: A Transformer That Solves Small Tabular Classification Problems in a Second. <br>
+Noah Hollmann, Samuel Müller, Katharina Eggensperger, Frank Hutter
+(ICLR 2023) <a href="https://arxiv.org/pdf/2207.01848.pdf">(paper)</a>
+</li>
+
+<li>Towards Out-of-Distribution Sequential Event Prediction: A Causal Treatment. <br>
+        Chenxiao Yang, Qitian Wu, Qingsong Wen, Zhiqiang Zhou, Liang Sun, Junchi Yan
+	(Neurips 2022) <a href="https://openreview.net/forum?id=XQu7UFSbzd2">(paper)</a>
+    </li>
+	
+<li>Transfer Learning on Heterogeneous Feature Spaces for Treatment Effects Estimation. <br>
+Ioana Bica, Mihaela van der Schaar
+(Neurips 2022) <a href="https://openreview.net/forum?id=nRcyGtY2kBC">(paper)</a>
+ </li>
+
+<li>SyncTwin: Treatment Effect Estimation with Longitudinal Outcomes. <br>
+Zhaozhi Qian, Yao Zhang, Ioana Bica, Angela Mary Wood, Mihaela van der Schaar
+(Neurips 2021) <a href="https://openreview.net/forum?id=52YubM-VC6H">(paper)</a>
+</li>	
+</ul>
+
+<h2>Branch 2: Downstream Tasks<small></small></h2>
+<h3>2.1 Generation <small></small></h3>
+<h4>2.1.1 GAN-based Models </h4>
+<ul>
+<li>Invertible Tabular GANs: Killing Two Birds with One Stone for Tabular Data Synthesis. <br>
+JAEHOON LEE, Jihyeon Hyeong, Jinsung Jeon, Noseong Park, Jihoon Cho
+(Neurips 2021)  <a href="https://openreview.net/forum?id=tvDBe6K8L5o">(paper)</a>
+</li>
+
+<li>DECAF: Generating Fair Synthetic Data Using Causally-Aware Generative Networks. <br>
+ Boris van Breugel, Trent Kyono, Jeroen Berrevoets, Mihaela van der Schaar
+(Neurips 2021)  <a href="https://openreview.net/forum?id=XN1M27T6uux">(paper)</a>
+</li>
+</ul>	
+	
+<h4>2.1.2 VAE-based Models </h4>
+<ul>
+<li>A Learnable Discrete-Prior Fusion Autoencoder with Contrastive Learning for Tabular Data Synthesis. <br>
+Rongchao Zhang, Yiwei Lou, Dexuan Xu, Yongzhi Cao, Hanpin Wang, Yu Huang 
+(AAAI 2024)	<a href="https://ojs.aaai.org/index.php/AAAI/article/view/29621">(paper)</a>
+</li>
+</ul>	
+	
+<h4>2.1.3 Diffusion-based Models </h4>
+<ul>	
+<li>Mixed-Type Tabular Data Synthesis with Score-based Diffusion in Latent Space. <br>
+Hengrui Zhang, Jiani Zhang, Zhengyuan Shen, Balasubramaniam Srinivasan, Xiao Qin, Christos Faloutsos, Huzefa Rangwala, George Karypis 
+(ICLR 2024)	<a href="https://openreview.net/forum?id=4Ay23yeuz0">(paper)</a>
+</li>
+
+<li>A Flexible Generative Model for Heterogeneous Tabular EHR with Missing Modality. <br>
+Huan He, William hao, Yuanzhe Xi, Yong Chen, Bradley Malin, Joyce Ho 
+(ICLR 2024) <a href="https://openreview.net/forum?id=W2tCmRrj7H">(paper)</a>
+</li>
+
+<li>CoDi: Co-evolving Contrastive Diffusion Models for Mixed-type Tabular Synthesis. <br>
+Chaejeong Lee, Jayoung Kim, Noseong Park
+(ICML 2023)	<a href="https://openreview.net/forum?id=sy9oDku9Lu">(paper)</a>
+</li>
+
+<li>TabDDPM: Modelling Tabular Data with Diffusion Models. <br>
+Akim Kotelnikov, Dmitry Baranchuk, Ivan Rubachev, Artem Babenko
+(ICML 2023)	<a href="https://openreview.net/forum?id=hTzPqLKBJY">(paper)</a>
+</li>
+
+<li>Concrete Score Matching: Generalized Score Matching for Discrete Data. <br>
+Chenlin Meng, Kristy Choi, Jiaming Song, Stefano Ermon (Neurips 2022)
+<a href="https://openreview.net/forum?id=_RL7wtHkPJK"> (paper)</a>
+</li>
+	
+<li>SOS: Score-based Oversampling Minor Classes for Tabular Data. <br>
+jayoung kim, ChaeJeong Lee,Yehjin Shin, Sewon Park, Minjung Kim, Noseong Park, Jihoon Cho
+(KDD 2022) <a href="https://arxiv.org/pdf/2206.08555.pdf">(paper)</a>
+</li>
+	
+</ul>
+
+<h4> 2.1.4 Transformer-based</h4>
+<ul>
+
+<li>
+ReMasker: Imputing Tabular Data with Masked Autoencoding. <br>
+Tianyu Du, Luca Melis, Ting Wang 
+(ICLR 2024) <a href="https://openreview.net/forum?id=KI9NqjLVDT">(paper)</a>
+</li>
+	
+<li>
+TabMT: Generating tabular data with masked transformers. <br>
+Manbir S Gulati, Paul F Roysdon  
+(Neurips 2023)  <a href="https://openreview.net/forum?id=qs4swxtIAQ"> (paper)</a>   
+</li>
+
+</ul>	
+	
+<h4>2.1.5 Large Language Model-based</h4>
+<ul>
+<li>
+Language-Interfaced Tabular Oversampling via Progressive Imputation and Self-Authentication. <br>
+June Yong Yang, Geondo Park, Joowon Kim, Hyeongwon Jang, Eunho Yang 
+(ICLR 2024) <a href="https://openreview.net/forum?id=8F6bws5JBy">(paper)</a>
+</li>
+	
+<li>Language Models are Realistic Tabular Data Generators. <br>
+Vadim Borisov, Kathrin Seßler2, Tobias Leemann, Martin Pawelczyk, Gjergji Kasneci
+(ICLR 2023) <a href="https://arxiv.org/html/2402.14335v1">(paper)</a>
+</li>	    
+	
+<li>Generative Table Pre-training Empowers Models for Tabular Prediction. <br>
+Tianping Zhang, Shaowen Wang, Shuicheng Yan, Jian Li, Qian Liu
+(EMNLP 2023)	<a href="https://arxiv.org/pdf/2305.09696.pdf">(paper)</a>
+</li>
+    
+<li>nBIIG: A Neural BI Insights Generation System for Table Reporting. <br>
+Yotam Perlitz, Dafna Sheinwald, Noam Slonim, Michal Shmueli-Scheuer
+(AAAI 2023)	<a href="https://arxiv.org/abs/2211.04417">(paper)</a>
+</li>
+</ul>
+
+<h4> 2.1.6 Model-agnostic</h4>
+<ul>
+<li>
+How Realistic Is Your Synthetic Data? Constraining Deep Generative Models for Tabular Data. <br>
+Mihaela C Stoian, Salijona Dyrmishi, Maxime Cordy, Thomas Lukasiewicz, Eleonora Giunchiglia 
+(ICLR 2024, interesting!) <a href="https://openreview.net/forum?id=tBROYsEz9G">(paper)</a>
+</li>
+</ul> 
+	
+<h3>2.2 Anomaly Detection <small></small></h3>
+<ul> 
+<li>
+MCM: Masked Cell Modeling for Anomaly Detection in Tabular Data. <br>
+Jiaxin Yin, Yuanyuan Qiao, Zitang Zhou, Xiangchao Wang, Jie Yang 
+(ICLR 2024).<a href="https://openreview.net/forum?id=lNZJyEDxy4">(paper)</a>
+</li>
+</ul> 	
+
+<h3>2.3 Transfer Learning <small></small></h3>
+<ul> 
+<li>
+MCM: Masked Cell Modeling for Anomaly Detection in Tabular Data. <br>
+Jiaxin Yin, Yuanyuan Qiao, Zitang Zhou, Xiangchao Wang, Jie Yang 
+(ICLR 2024).<a href="https://openreview.net/forum?id=lNZJyEDxy4">(paper)</a>
+</li>
+
+<li>XTab: Cross-table Pretraining for Tabular Transformers. <br>
+Bingzhao Zhu, Xingjian Shi, Nick Erickson, Mu Li, George Karypis, Mahsa Shoaran
+(ICML 2023) <a href="https://openreview.net/forum?id=uGORNDmIdr">(paper)</a>
+</li>
+	
+    <li>
+        TransTab: Learning Transferable Tabular Transformers Across Tables. <br>
+       Zifeng Wang, Jimeng Sun.
+	(Neurips 2022) <a href="https://openreview.net/forum?id=A1yGs_SWiIi">(paper)</a>  
+    </li>
+
+<li>External Knowledge Infusion for Tabular Pre-training Models with Dual-adapters. <br>
+Can Qin, Sungchul Kim, Handong Zhao, Tong Yu, Ryan A. Rossi, YUN FU.
+(KDD 2022)	<a href="https://dl.acm.org/doi/abs/10.1145/3534678.3539403">(paper)</a>
+ </li>
+	
+<li>Transfer Learning on Heterogeneous Feature Spaces for Treatment Effects Estimation. <br>
+Ioana Bica, Mihaela van der Schaar
+(Neurips 2022) <a href="https://openreview.net/forum?id=nRcyGtY2kBC">(paper)</a>
+</ul> 
+
+<h3> 2.4 Explanation/Model Assesment<small></small></h3>
+<ul>
+
+   <li>Do Machine Learning Models Learn Statistical Rules Inferred from Data? <br>
+   Aaditya Naik, Yinjun Wu, Mayur Naik, Eric Wong
+   (ICML 2023)	<a href="https://openreview.net/forum?id=CtKKqTZFuV">(paper)</a>
+   </li>
+
+    <li>
+        An Inductive Bias for Tabular Deep Learning. <br>
+        Ege Beyazit, Jonathan Kozaczuk, Bo Li, Vanessa Wallace, Bilal H Fadlallah (NeurIPS 2023) <a href="https://openreview.net/forum?id=XEUc1JegGt">(paper)</a> 
+    </li>
+
+    <li>
+       TabCBM: Concept-based Interpretable Neural Networks for Tabular Data. <br>
+       Mateo Espinosa Zarlenga, Zohreh Shams, Michael Edward Nelson, Been Kim, and Mateja Jamnik (TMLR 2023) <a href="https://github.com/mateoespinosa/tabcbm">(paper)</a> 
+    </li>
+	
+   <li>Tabular Data: Deep Learning is Not All You Need. <br>
+    Ravid Shwartz-Ziv, Amitai Armon. (Information Fusion 2022)	<a href="https://arxiv.org/pdf/2106.03253.pdf">(paper)</a>
+    </li>
+	
+
+    <li>Revisiting Deep Learning Models for Tabular Data. <br>
+      Yury Gorishniy, Ivan Rubachev, Valentin Khrulkov, Artem Babenko 
+	 (Neurips 2021)  <a href="https://openreview.net/forum?id=i_Q1yrOegLY">(paper)</a>
+    </li>
+
+
+</ul>
+
+<h3>2.5: Efficiency</h3>
+<ul>
+<li>FHyperFast: Instant Classification for Tabular Data. <br>
+David Bonet; Daniel Mas Montserrat; Xavier Giró-i-Nieto; Alexander Ioannidis
+(AAAI 2024) <a href="https://arxiv.org/html/2402.14335v1">(paper)</a>
+</li>
+	
+<li>TabPFN: A Transformer That Solves Small Tabular Classification Problems in a Second. <br>
+Noah Hollmann, Samuel Müller, Katharina Eggensperger, Frank Hutter
+(ICLR 2023) <a href="https://arxiv.org/pdf/2207.01848.pdf">(paper)</a>
+</li>
+
+<li>
+Clustering the Sketch: Dynamic Compression for Embedding Tables. <br>
+Henry Tsang, Thomas Dybdahl Ahle (Neurips 2023) <a href="https://openreview.net/forum?id=C4rRqkXFyC">(paper)</a>
+</li>
+
+<li>Compressing Tabular Data via Latent Variable Estimation. <br>
+Andrea Montanari, Eric Weiner
+(ICML 2023) <a href="https://openreview.net/forum?id=TdGIfSZDV3">(paper)</a>
+</li>
+</ul>
+	
+<h2>Branch 3: Application <small></small></h2>
+<h3>3.1 Clinical Tabular Data <small></small></h3>
+<ul>
+
+    <li>Weight Predictor Network with Feature Selection for Small Sample Tabular Biomedical Data. <br>
+	Andrei Margeloiu, Nikola Simidjievski, Pietro Liò, Mateja Jamnik.
+	(AAAI 2023) <a href="https://arxiv.org/abs/2211.15616">(paper)</a>
+    </li>    
+    <li>Improving Medical Predictions by Irregular Multimodal Electronic Health Records Modeling. <br>
+	Xinlu Zhang, Shiyang Li, Zhiyu Chen, Xifeng Yan, Linda Ruth Petzold
+	(ICML 2023) <a href="https://openreview.net/forum?id=zi1iKanf9k">(paper)</a>
+    </li>
+	
+    <li>
+        Towards Semi-Structured Automatic ICD Coding via Tree-based Contrastive Learning. <br>
+         Chang Lu, Chandan K. Reddy, Ping Wang, Yue Ning 
+	(Neurips 2023) <a href="https://openreview.net/forum?id=Wff6DWFY2W">(paper)</a>
+    </li>
+
+    <li>
+        MOTOR: A Time-to-Event Foundation Model For Structured Medical Records. <br>
+         Ethan Steinberg, Jason Alan Fries, Yizhe Xu, Nigam Shah (Neurips 2023)
+	<a href="https://openreview.net/forum?id=NialiwI2V6">(paper)</a>
+    </li>
+
+    <li>Locally Sparse Neural Networks for Tabular Biomedical Data. <br>
+	Junchen Yang, Ofir Lindenbaum, Yuval Kluger
+	(ICML 2022) <a href="https://icml.cc/virtual/2022/poster/16809">(paper)</a>
+    </li>
+
+	
+    <li>Evaluating Latent Space Robustness and Uncertainty of EEG-ML Models under Realistic Distribution Shifts. <br>
+     Neeraj Wagh, Jionghao Wei, Samarth Rawal, Brent M. Berry, Yogatheesan Varatharajah
+     (Neurips 2022) <a href="https://openreview.net/forum?id=KRk0lBRPpOC">(paper)</a>
+    </li>
+	
+    <li>Debiased, Longitudinal and Coordinated Drug Recommendation through Multi-Visit Clinic Records. <br>
+        Hongda Sun, Shufang Xie, Shuqi Li, Yuhan Chen, Ji-Rong Wen, Rui Yan
+	(Neurips 2022) <a href="https://openreview.net/forum?id=zVglD2W0EAS">(paper)</a>
+    </li>
+
+    <li>Retrieve, Reason, and Refine: Generating Accurate and Faithful Patient Instructions. <br>
+       Fenglin Liu, Bang Yang, Chenyu You, Xian Wu, Shen Ge, Zhangdaihong Liu, Xu Sun, Yang Yang, David A. Clifton
+       (Neurips 2022) <a href="https://openreview.net/forum?id=dp0zWsdOV1h">(paper)</a>
+    </li>
+
+    <li>Self-Supervised Graph Neural Networks for Improved Electroencephalographic Seizure Analysis. <br>
+       Siyi Tang, Jared Dunnmon, Khaled Kamal Saab, Xuan Zhang, Qianying Huang, Florian Dubost, Daniel Rubin, Christopher Lee-Messer
+	    (ICLR 2022)<a href="https://openreview.net/forum?id=k9bx1EfHI_-">(paper)</a>
+    </li>
+	
+    <li>SyncTwin: Treatment Effect Estimation with Longitudinal Outcomes. <br>
+        Zhaozhi Qian, Yao Zhang, Ioana Bica, Angela Mary Wood, Mihaela van der Schaar
+	(Neurips 2021) <a href="https://openreview.net/forum?id=52YubM-VC6H">(paper)</a>
+    </li>
+
+</ul>
+	
+
+<h3>3.2 Financial Tabular Data <small></small></h3>	  
+<ul>
+	<li>Beyond Pure Text: Summarizing Financial Reports Based on Both Textual and Tabular Data. <br>
+	Ziao Wang, Zelin Jiang, Xiaofeng Zhang, Jaehyeon Soon, Jialu Zhang, Wang Xiaoyao, Hongwei Du
+	(IJCAI 2023)	<a href="https://www.ijcai.org/proceedings/2023/0581.pdf">(paper)</a>
+	</li>	
+</ul>
+	
+<h3>Existing Surveys</h3>
+<ul>
+    <li>
+       Deep Neural Networks and Tabular Data: A Survey. <br>
+        Vadim Borisov, Tobias Leemann, Kathrin Seßler, Johannes Haug, Martin Pawelczyk, Gjergji Kasneci <a href="https://arxiv.org/abs/2110.01889">(paper)</a>
+    </li>
+
+    <li>
+       A Survey on Self-Supervised Learning for Non-Sequential Tabular Data. <br>
+Wei-Yao Wang1, Wei-Wei Du2,, Derek Xu, Wei Wang, Wen-Chih Peng
+Arxiv <a href="https://arxiv.org/pdf/2402.01204.pdf">(paper)</a>
+    </li>
+   
+</ul>
+
+<h3>Tools & Libraries</h3>
+<ul>
+    <li>Pytorch Frame: A modular deep learning framework for building neural network models on heterogeneous tabular data. <a href="https://github.com/pyg-team/pytorch-frame#implemented-deep-tabular-models">(paper)</a>
+    </li>	    
+    <li>PyTorch Tabular: A Framework for Deep Learning with Tabular Data. <a href="https://github.com/manujosephv/pytorch_tabular"></a>
+    </li>
+</ul>
+
+
+<div id="footer">
+    <div id="footer-text"></div>
+</div>
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=BTX_H0VnhuD1hlDFNm6hhvMcQnE6E5gY6fYuNlGg0Gs"></script>
+</div>
+
+
+
+Last updated on April. 07, 2024. 
+(For problems, contact wjr5337@psu.edu. To add papers, please pull request at <a href="https://github.com/Tabular-Survey/Tabular-Survey.github.io">our repo</a>)
+</body></html>
