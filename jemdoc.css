@@ -151,8 +151,9 @@ h1 {
 }
 
 h2 {
-    padding-top: 0.8em;
-    font-size: 125%;
+  padding-top: 0.8em;
+  font-size: 125%;
+  border-bottom: none;
 }
 
 h2 + h3 {
